@@ -1,7 +1,12 @@
 ShareMachine::Application.routes.draw do
-  get "pages/home"
-  get "pages/about"
-  get "pages/contact"
+  match '/about',   :to => 'pages#about'
+  match '/contact', :to => 'pages#contact'
+  
+  root :to => 'pages#home'
+
+#  get "pages/home"
+#  get "pages/about"
+#  get "pages/contact"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
