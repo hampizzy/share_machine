@@ -1,7 +1,8 @@
 require 'spec_helper'
 
 describe PagesController do
-
+  render_views
+  
   before(:each) do
     @base_title = "Share Machine"
   end
